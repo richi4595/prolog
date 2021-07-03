@@ -47,7 +47,7 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-2">
-                                        <a href="http://localhost/xtremeadmin/xtreme-admin/html/cinemaEstelar/cinema.html"><button type="button" class="btn btn-block btn-dark"><i class="fas fa-arrow-left mr-2 "></i>Regresar</button></a>
+                                        <a href="cinema.html"><button type="button" class="btn btn-block btn-dark"><i class="fas fa-arrow-left mr-2 "></i>Regresar</button></a>
                                     </div>
                                     <div class="col-md-9"></div>
                                 </div>
