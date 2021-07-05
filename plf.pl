@@ -531,7 +531,7 @@ largo([],0).
 largo([H|T], L):- largo(T,Lt), L is Lt + 1.
 
 % Saltos de linea.
-
+ 
 recomendarAudiovisual(Usuario, PorcentajeMinimo):- usuario(Usuario), audiovisual(Audiovisual), generosUsuario(Usuario, GeneroU), generosAudiovisual(Audiovisual, GeneroA), formatoUsuario(Usuario, FormatoU), formatoAudivisual(Audiovisual, FormatoA), ratingUsuario(Usuario, RatingU), ratingAudivisual(Audiovisual, RatingA), idiomaUsuario(Usuario, IdiomaU), idiomaAudiovisual(Audiovisual, IdiomaA), 
 
 coincid(GeneroU, GeneroA, CoincidG), 
