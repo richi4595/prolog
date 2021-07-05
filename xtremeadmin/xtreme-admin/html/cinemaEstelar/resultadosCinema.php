@@ -59,10 +59,10 @@
    		$rutaArchivoProlog="../../../../plf.pl";
    		if(!file_exists($rutaArchivoProlog)) die ("No existe el archivo");
 		
-		$a='"'.$_POST["nombreUsuario"].'"';
-		$b=25;
-		$c="findall((A),recomendarAudiovisual(".$a.",".$b."),Z).";
-		$consulta = "swipl -s '$rutaArchivoProlog' -g '$c' -t halt.";
+		$nombreUsuario='"'.$_POST["nombreUsuario"].'"';
+		$porcentajeMin=25;
+		$llamada="findall((A),recomendarAudiovisual(".$nombreUsuario.",".$porcentajeMin."),Z).";
+		$consulta = "swipl -s '$rutaArchivoProlog' -g '$llamada' -t halt.";
 		$ejecucion= shell_exec($consulta);
 		$arregloResultados= explode("$", $ejecucion);
 		
@@ -102,7 +102,7 @@
                                         <img src="../../assets/images/baqueta.svg" alt="logo" width="250px"/>
                                     </div>
                                     <div class="col-md-12">
-                                        <p class="font-18" style="text-align: justify;">Las recomendaciones están basadas en los registros que tenemos de tus gustos y las peliculas que se han dado de alta en nuestro sistema, si la recomendación acertó por debajo del 20% puede que sea por la falta de peliculas registradas, no es culpa tuya. Intentalo de nuevo más tárde.</p>
+                                        <p class="font-18" style="text-align: justify;">Las recomendaciones están basadas en los registros que tenemos de tus gustos y las peliculas que se han dado de alta en nuestro sistema, si la recomendación acertó por debajo del 25% puede que sea por la falta de peliculas registradas, no es culpa tuya. Intentalo de nuevo más tárde.</p>
                                     </div>
                                 </div>
                             </div>

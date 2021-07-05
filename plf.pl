@@ -557,9 +557,3 @@ PorcenajeMatchGlobal>=PorcentajeMinimo,
 write(PorcenajeMatchGlobal), write('%'), write(Audiovisual), write('%'), write(GeneroA), write('%'), write(FormatoA), write('%'), write(RatingA), write('%'), write(IdiomaA), write('$').
 
 
-
-
-
-% Borrar todo este cho al finalizar las pruebas
-write('Info peli: '), write(Audiovisual), write(','), write(GeneroA), write(','), write(FormatoA), write(','), write(RatingA), write('. Coincidencias: '), write(CoincidG), write(','), write(CoincidF), write(','), write(CoincidI), write('. Largos: '), write(LargoGU), write(','), write(LargoGA), write(','), write(LargoFU), write(','), write(LargoFA), write(','), write(LargoIU), write(','), write(LargoIA), write('. Promedios: '), write(PromedioG), write(','), write(PromedioF), write(','), write(PromedioI), write('. Matchs: '), write(PorcenajeMatchG), write(','), write(PorcenajeMatchF), write(','), write(PorcenajeMatchI), write(', Global: '), write(PorcenajeMatchGlobal), write('#').
-
